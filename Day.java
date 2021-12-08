@@ -7,7 +7,7 @@ public class Day
 {
 	public static void main(String[] args) throws ParseException 
 	{
-		String s = "1998/12/13";
+		String s = "2000/05/14";
 		SimpleDateFormat format = new SimpleDateFormat("yyyy/MM/dd");
 		Date d = format.parse(s);
 		

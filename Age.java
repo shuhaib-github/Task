@@ -10,6 +10,11 @@ public class Age
 {
 	public static void main(String[] args) throws ParseException 
 	{
+		LocalDate Dob = LocalDate.of(1998, 04, 23); 
+		LocalDate now = LocalDate.now(); 
+		Period diff = Period.between(Dob, now); 
+		System.out.println(diff.getYears() + "years" + diff.getMonths() + "months" + diff.getDays() + "days");
+		
 		String s = "1998/12/13";
 		SimpleDateFormat format = new SimpleDateFormat("yyyy/MM/dd");
 		Date d = format.parse(s);
@@ -22,7 +27,7 @@ public class Age
 		LocalDate now1 = LocalDate.now();
 		Period diff1 = Period.between(l1, now1);
 		System.out.println("age:" + diff1.getYears() + "years");
-		System.out.println(now1);
+		
 		
 		
 	}
